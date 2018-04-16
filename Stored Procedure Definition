@@ -1,0 +1,21 @@
+String authUser(string username, string password)
+Customer getCustomers()
+Employee getEmployees()
+boolean addCustomer(Customer customer)
+Customer getCustomer(int customerID)
+List<Customer> searchCustomer(string telephone)
+List<Customer> searchCustomer(string name)
+List<Customer> searchCustomer(string nationalID)
+
+boolean ModifyCustomer(Customer customer)
+boolean createOrder(Order order)
+boolean modifyOrder(int orderID, int deliveryID, Piece piece, Order order)
+List<Order> searchOrder(datetime beginDate, datetime finishDate)
+
+List<Service> getServices()
+
+boolean insertCashBox(CashBox cashbox)
+List<CashBox> searchCashBox(datetime beginDate, datetime finishDate)
+CashBox getEmployeeCashBox(datetime beginDate, datetime finishDate, int employeeID)
+boolean modifyCashBox(CashBox cashbox)
+

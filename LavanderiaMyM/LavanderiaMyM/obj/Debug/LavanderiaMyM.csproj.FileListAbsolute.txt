@@ -1,0 +1,11 @@
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\bin\Debug\LavanderiaMyM.exe.config
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\bin\Debug\LavanderiaMyM.exe
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\bin\Debug\LavanderiaMyM.pdb
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.csprojResolveAssemblyReference.cache
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.Properties.Resources.resources
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.csproj.GenerateResource.Cache
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.csproj.CoreCompileInputs.cache
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.exe
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.pdb
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.LogIn.resources
+C:\Users\emenm\Desktop\M&M\LavanderiaMyM\LavanderiaMyM\obj\Debug\LavanderiaMyM.PrincipalMenu.resources
