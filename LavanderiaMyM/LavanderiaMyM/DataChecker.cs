@@ -12,5 +12,14 @@ namespace LavanderiaMyM
         {
             return (a != "" && a.Length <= size);
         }
+        public int convertStringtoInt(string a)
+        {
+            if (a == null || a == "") return 0;
+            return Int32.Parse(a);
+        }
+        public bool ConvertBoolean(string a)
+        {
+            return a == "1";
+        }
     }
 }

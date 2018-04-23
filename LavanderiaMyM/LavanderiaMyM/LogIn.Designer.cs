@@ -52,6 +52,7 @@
             this.LogIn_password.Name = "LogIn_password";
             this.LogIn_password.Size = new System.Drawing.Size(197, 26);
             this.LogIn_password.TabIndex = 1;
+            this.LogIn_password.UseSystemPasswordChar = true;
             this.LogIn_password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1

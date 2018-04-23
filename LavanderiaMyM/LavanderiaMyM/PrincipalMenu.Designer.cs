@@ -31,37 +31,43 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.cashBoxdateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.cashBoxdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cashSearchButton = new System.Windows.Forms.Button();
+            this.eraseCashButton = new System.Windows.Forms.Button();
+            this.listViewCashBox = new System.Windows.Forms.ListView();
+            this.tarjCh_textBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tarjDeb_textBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tarjCre_textBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.m1_textBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.m5_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.m10_textBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.m20_textBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.m25_textBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.m50_textBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.m100_textBox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.m200_textBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.m500_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.m1000_textBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.m2000_textBox = new System.Windows.Forms.TextBox();
+            this.EnterCashButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCashBoxEmployeeName = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -91,37 +97,43 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listView1);
-            this.tabPage2.Controls.Add(this.textBox10);
+            this.tabPage2.Controls.Add(this.cashBoxdateTimePicker2);
+            this.tabPage2.Controls.Add(this.cashBoxdateTimePicker1);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.cashSearchButton);
+            this.tabPage2.Controls.Add(this.eraseCashButton);
+            this.tabPage2.Controls.Add(this.listViewCashBox);
+            this.tabPage2.Controls.Add(this.tarjCh_textBox);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.tarjDeb_textBox);
             this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.textBox12);
+            this.tabPage2.Controls.Add(this.tarjCre_textBox);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.m1_textBox);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.m5_textBox);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.m10_textBox);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox8);
+            this.tabPage2.Controls.Add(this.m20_textBox);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label18);
-            this.tabPage2.Controls.Add(this.textBox13);
+            this.tabPage2.Controls.Add(this.m25_textBox);
             this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.textBox14);
+            this.tabPage2.Controls.Add(this.m50_textBox);
             this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.textBox15);
+            this.tabPage2.Controls.Add(this.m100_textBox);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.m200_textBox);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.m500_textBox);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.m1000_textBox);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.m2000_textBox);
+            this.tabPage2.Controls.Add(this.EnterCashButton);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.labelCashBoxEmployeeName);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -133,21 +145,81 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // listView1
+            // cashBoxdateTimePicker2
             // 
-            this.listView1.Location = new System.Drawing.Point(32, 266);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(865, 340);
-            this.listView1.TabIndex = 48;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.cashBoxdateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashBoxdateTimePicker2.Location = new System.Drawing.Point(664, 267);
+            this.cashBoxdateTimePicker2.Name = "cashBoxdateTimePicker2";
+            this.cashBoxdateTimePicker2.Size = new System.Drawing.Size(231, 30);
+            this.cashBoxdateTimePicker2.TabIndex = 56;
             // 
-            // textBox10
+            // cashBoxdateTimePicker1
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(480, 167);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 30);
-            this.textBox10.TabIndex = 47;
+            this.cashBoxdateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashBoxdateTimePicker1.Location = new System.Drawing.Point(305, 267);
+            this.cashBoxdateTimePicker1.Name = "cashBoxdateTimePicker1";
+            this.cashBoxdateTimePicker1.Size = new System.Drawing.Size(231, 30);
+            this.cashBoxdateTimePicker1.TabIndex = 55;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(589, 272);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 25);
+            this.label10.TabIndex = 54;
+            this.label10.Text = "Hasta:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(224, 272);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 25);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Desde:";
+            // 
+            // cashSearchButton
+            // 
+            this.cashSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashSearchButton.Location = new System.Drawing.Point(32, 261);
+            this.cashSearchButton.Name = "cashSearchButton";
+            this.cashSearchButton.Size = new System.Drawing.Size(186, 46);
+            this.cashSearchButton.TabIndex = 50;
+            this.cashSearchButton.Text = "Buscar";
+            this.cashSearchButton.UseVisualStyleBackColor = true;
+            this.cashSearchButton.Click += new System.EventHandler(this.cashSearchButton_Click);
+            // 
+            // eraseCashButton
+            // 
+            this.eraseCashButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eraseCashButton.Location = new System.Drawing.Point(711, 205);
+            this.eraseCashButton.Name = "eraseCashButton";
+            this.eraseCashButton.Size = new System.Drawing.Size(186, 46);
+            this.eraseCashButton.TabIndex = 49;
+            this.eraseCashButton.Text = "Borrar Todo";
+            this.eraseCashButton.UseVisualStyleBackColor = true;
+            this.eraseCashButton.Click += new System.EventHandler(this.eraseCashButton_Click);
+            // 
+            // listViewCashBox
+            // 
+            this.listViewCashBox.Location = new System.Drawing.Point(32, 313);
+            this.listViewCashBox.MultiSelect = false;
+            this.listViewCashBox.Name = "listViewCashBox";
+            this.listViewCashBox.Size = new System.Drawing.Size(865, 293);
+            this.listViewCashBox.TabIndex = 48;
+            this.listViewCashBox.UseCompatibleStateImageBehavior = false;
+            this.listViewCashBox.SelectedIndexChanged += new System.EventHandler(this.listViewCashBox_SelectedIndexChanged);
+            // 
+            // tarjCh_textBox
+            // 
+            this.tarjCh_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarjCh_textBox.Location = new System.Drawing.Point(797, 169);
+            this.tarjCh_textBox.Name = "tarjCh_textBox";
+            this.tarjCh_textBox.Size = new System.Drawing.Size(100, 30);
+            this.tarjCh_textBox.TabIndex = 47;
             // 
             // label11
             // 
@@ -159,13 +231,13 @@
             this.label11.TabIndex = 46;
             this.label11.Text = "1 x";
             // 
-            // textBox11
+            // tarjDeb_textBox
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(480, 128);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 30);
-            this.textBox11.TabIndex = 45;
+            this.tarjDeb_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarjDeb_textBox.Location = new System.Drawing.Point(797, 130);
+            this.tarjDeb_textBox.Name = "tarjDeb_textBox";
+            this.tarjDeb_textBox.Size = new System.Drawing.Size(100, 30);
+            this.tarjDeb_textBox.TabIndex = 45;
             // 
             // label12
             // 
@@ -177,13 +249,14 @@
             this.label12.TabIndex = 44;
             this.label12.Text = "5 x";
             // 
-            // textBox12
+            // tarjCre_textBox
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(480, 90);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 30);
-            this.textBox12.TabIndex = 43;
+            this.tarjCre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarjCre_textBox.Location = new System.Drawing.Point(797, 92);
+            this.tarjCre_textBox.Name = "tarjCre_textBox";
+            this.tarjCre_textBox.Size = new System.Drawing.Size(100, 30);
+            this.tarjCre_textBox.TabIndex = 43;
+            this.tarjCre_textBox.TextChanged += new System.EventHandler(this.tarjC_textBox_TextChanged);
             // 
             // label13
             // 
@@ -195,13 +268,13 @@
             this.label13.TabIndex = 42;
             this.label13.Text = "10 x";
             // 
-            // textBox5
+            // m1_textBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(284, 205);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 30);
-            this.textBox5.TabIndex = 41;
+            this.m1_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m1_textBox.Location = new System.Drawing.Point(480, 169);
+            this.m1_textBox.Name = "m1_textBox";
+            this.m1_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m1_textBox.TabIndex = 41;
             // 
             // label6
             // 
@@ -213,13 +286,13 @@
             this.label6.TabIndex = 40;
             this.label6.Text = "20 x";
             // 
-            // textBox6
+            // m5_textBox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(284, 167);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 30);
-            this.textBox6.TabIndex = 39;
+            this.m5_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m5_textBox.Location = new System.Drawing.Point(480, 131);
+            this.m5_textBox.Name = "m5_textBox";
+            this.m5_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m5_textBox.TabIndex = 39;
             // 
             // label7
             // 
@@ -231,13 +304,13 @@
             this.label7.TabIndex = 38;
             this.label7.Text = "25 x";
             // 
-            // textBox7
+            // m10_textBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(284, 128);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 30);
-            this.textBox7.TabIndex = 37;
+            this.m10_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m10_textBox.Location = new System.Drawing.Point(480, 92);
+            this.m10_textBox.Name = "m10_textBox";
+            this.m10_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m10_textBox.TabIndex = 37;
             // 
             // label8
             // 
@@ -249,13 +322,13 @@
             this.label8.TabIndex = 36;
             this.label8.Text = "50 x";
             // 
-            // textBox8
+            // m20_textBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(284, 90);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 30);
-            this.textBox8.TabIndex = 35;
+            this.m20_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m20_textBox.Location = new System.Drawing.Point(284, 205);
+            this.m20_textBox.Name = "m20_textBox";
+            this.m20_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m20_textBox.TabIndex = 35;
             // 
             // label9
             // 
@@ -271,61 +344,61 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(754, 61);
+            this.label18.Location = new System.Drawing.Point(725, 62);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(103, 25);
             this.label18.TabIndex = 33;
             this.label18.Text = "TARJETA";
             // 
-            // textBox13
+            // m25_textBox
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(797, 163);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 30);
-            this.textBox13.TabIndex = 32;
+            this.m25_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m25_textBox.Location = new System.Drawing.Point(284, 169);
+            this.m25_textBox.Name = "m25_textBox";
+            this.m25_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m25_textBox.TabIndex = 32;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(699, 164);
+            this.label15.Location = new System.Drawing.Point(690, 167);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 25);
             this.label15.TabIndex = 31;
             this.label15.Text = "Cheques";
             // 
-            // textBox14
+            // m50_textBox
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(797, 127);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 30);
-            this.textBox14.TabIndex = 30;
+            this.m50_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m50_textBox.Location = new System.Drawing.Point(284, 131);
+            this.m50_textBox.Name = "m50_textBox";
+            this.m50_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m50_textBox.TabIndex = 30;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(630, 128);
+            this.label16.Location = new System.Drawing.Point(621, 133);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(161, 25);
             this.label16.TabIndex = 29;
             this.label16.Text = "Tarjeta de Debito";
             // 
-            // textBox15
+            // m100_textBox
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(797, 89);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 30);
-            this.textBox15.TabIndex = 28;
+            this.m100_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m100_textBox.Location = new System.Drawing.Point(284, 92);
+            this.m100_textBox.Name = "m100_textBox";
+            this.m100_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m100_textBox.TabIndex = 28;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(623, 90);
+            this.label17.Location = new System.Drawing.Point(614, 95);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(168, 25);
             this.label17.TabIndex = 27;
@@ -341,13 +414,13 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "EFECTIVO";
             // 
-            // textBox3
+            // m200_textBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(93, 205);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 30);
-            this.textBox3.TabIndex = 9;
+            this.m200_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m200_textBox.Location = new System.Drawing.Point(93, 205);
+            this.m200_textBox.Name = "m200_textBox";
+            this.m200_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m200_textBox.TabIndex = 9;
             // 
             // label4
             // 
@@ -359,13 +432,13 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "200 x";
             // 
-            // textBox4
+            // m500_textBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(93, 167);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 30);
-            this.textBox4.TabIndex = 7;
+            this.m500_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m500_textBox.Location = new System.Drawing.Point(93, 167);
+            this.m500_textBox.Name = "m500_textBox";
+            this.m500_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m500_textBox.TabIndex = 7;
             // 
             // label5
             // 
@@ -377,13 +450,13 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "500 x";
             // 
-            // textBox2
+            // m1000_textBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(93, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 30);
-            this.textBox2.TabIndex = 5;
+            this.m1000_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m1000_textBox.Location = new System.Drawing.Point(93, 128);
+            this.m1000_textBox.Name = "m1000_textBox";
+            this.m1000_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m1000_textBox.TabIndex = 5;
             // 
             // label3
             // 
@@ -395,24 +468,24 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "1000 x";
             // 
-            // textBox1
+            // m2000_textBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(93, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 30);
-            this.textBox1.TabIndex = 3;
+            this.m2000_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m2000_textBox.Location = new System.Drawing.Point(93, 90);
+            this.m2000_textBox.Name = "m2000_textBox";
+            this.m2000_textBox.Size = new System.Drawing.Size(100, 30);
+            this.m2000_textBox.TabIndex = 3;
             // 
-            // button1
+            // EnterCashButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(575, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ingresar Cuadre";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.EnterCashButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnterCashButton.Location = new System.Drawing.Point(480, 205);
+            this.EnterCashButton.Name = "EnterCashButton";
+            this.EnterCashButton.Size = new System.Drawing.Size(186, 46);
+            this.EnterCashButton.TabIndex = 2;
+            this.EnterCashButton.Text = "Ingresar Cuadre";
+            this.EnterCashButton.UseVisualStyleBackColor = true;
+            this.EnterCashButton.Click += new System.EventHandler(this.EnterCashButton_Click);
             // 
             // label2
             // 
@@ -455,38 +528,44 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.ListView listViewCashBox;
+        private System.Windows.Forms.TextBox tarjCh_textBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tarjDeb_textBox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tarjCre_textBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox m1_textBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox m5_textBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox m10_textBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox m20_textBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox m25_textBox;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox m50_textBox;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox m100_textBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox m200_textBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox m500_textBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox m1000_textBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox m2000_textBox;
+        private System.Windows.Forms.Button EnterCashButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelCashBoxEmployeeName;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cashSearchButton;
+        private System.Windows.Forms.Button eraseCashButton;
+        private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker2;
+        private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker1;
     }
 }

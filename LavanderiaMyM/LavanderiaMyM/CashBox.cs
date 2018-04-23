@@ -14,67 +14,91 @@ namespace LavanderiaMyM
         double cashInDebitCard;
         double cashInCreditCard;
         double cashInCheck;
+        int[] moneyValue = { 2000, 1000, 500, 200, 100, 50, 25, 20, 10, 5, 1};
 
-        int m2000;
-        int m1000;
-        int m500;
-        int m200;
-        int m100;
-        int m50;
-        int m25;
-        int m20;
-        int m10;
-        int m5;
-        int m1;
-
+        int[] money = new int [11];
         double leftOver;
         double groosMoney;
         double discountMoney;
 
         double moneyInBox;
+        DateTime wasCreated;
+        DataChecker dataChecker = new DataChecker();
 
         bool isBoxClose;
 
-        public CashBox(int id, int employeeId, double cashInDebitCard, double cashInCreditCard, double cashInCheck, int m2000, int m1000, int m500, int m200, int m100, int m50, int m25, int m20, int m10, int m5, int m1, double leftOver, double groosMoney, double discountMoney, double moneyInBox, bool isBoxClose)
+        public CashBox(int employeeId)
         {
-            this.id = id;
-            this.employeeId = employeeId;
-            this.cashInDebitCard = cashInDebitCard;
-            this.cashInCreditCard = cashInCreditCard;
-            this.cashInCheck = cashInCheck;
-            this.M2000 = m2000;
-            this.M1000 = m1000;
-            this.M500 = m500;
-            this.M200 = m200;
-            this.M100 = m100;
-            this.M50 = m50;
-            this.M25 = m25;
-            this.M20 = m20;
-            this.M10 = m10;
-            this.M5 = m5;
-            this.M1 = m1;
-            this.LeftOver = leftOver;
-            this.GroosMoney = groosMoney;
-            this.DiscountMoney = discountMoney;
-            this.MoneyInBox = moneyInBox;
-            this.IsBoxClose = isBoxClose;
+            EmployeeId = employeeId;
+        }
+        public CashBox(int id, int employeeId, double cashInDebitCard, double cashInCreditCard, 
+            double cashInCheck, int m2000, int m1000, int m500, int m200, int m100, int m50, int m25, 
+            int m20, int m10, int m5, int m1, double leftOver, double groosMoney, double discountMoney, 
+            double moneyInBox, bool isBoxClose, DateTime wasCreated)
+        {
+            Id = id;
+            EmployeeId = employeeId;
+            CashInDebitCard = cashInDebitCard;
+            CashInCreditCard = cashInCreditCard;
+            CashInCheck = cashInCheck;
+            Money[10] = m2000;
+            Money[9] = m1000;
+            Money[8] = m500;
+            Money[7] = m200;
+            Money[6] = m100;
+            Money[5] = m50;
+            Money[4] = m25;
+            Money[3] = m20;
+            Money[2] = m10;
+            Money[1] = m5;
+            Money[0] = m1;
+            LeftOver = leftOver;
+            GroosMoney = groosMoney;
+            DiscountMoney = discountMoney;
+            MoneyInBox = moneyInBox;
+            IsBoxClose = isBoxClose;
+            WasCreated = wasCreated;
+            calculateMoneyInBox();
+        }
+        public void calculateMoneyInBox()
+        {
+            MoneyInBox = 0;
+            for (int i = 0; i < Money.Length; i++)
+                MoneyInBox += Money[i] * moneyValue[i];
+        }
+        public bool getMoney(string cashInDebitCard, string cashInCreditCard,
+            string cashInCheck, params string[] coins)
+        {
+            if (coins.Length != Money.Length)
+                return false;
+            try
+            {
+                CashInDebitCard = dataChecker.convertStringtoInt(cashInDebitCard);
+                CashInCreditCard = dataChecker.convertStringtoInt(cashInCreditCard);
+                CashInCheck = dataChecker.convertStringtoInt(cashInCheck);
+                for (int i = 0; i < Money.Length; i++)
+                    Money[i] = Int32.Parse(coins[i]);
+                calculateMoneyInBox();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        public int M2000 { get => m2000; set => m2000 = value; }
-        public int M1000 { get => m1000; set => m1000 = value; }
-        public int M500 { get => m500; set => m500 = value; }
-        public int M200 { get => m200; set => m200 = value; }
-        public int M100 { get => m100; set => m100 = value; }
-        public int M50 { get => m50; set => m50 = value; }
-        public int M25 { get => m25; set => m25 = value; }
-        public int M20 { get => m20; set => m20 = value; }
-        public int M10 { get => m10; set => m10 = value; }
-        public int M5 { get => m5; set => m5 = value; }
-        public int M1 { get => m1; set => m1 = value; }
+
         public double LeftOver { get => leftOver; set => leftOver = value; }
         public double GroosMoney { get => groosMoney; set => groosMoney = value; }
         public double DiscountMoney { get => discountMoney; set => discountMoney = value; }
         public double MoneyInBox { get => moneyInBox; set => moneyInBox = value; }
         public bool IsBoxClose { get => isBoxClose; set => isBoxClose = value; }
+        public int Id { get => id; set => id = value; }
+        public int EmployeeId { get => employeeId; set => employeeId = value; }
+        public double CashInDebitCard { get => cashInDebitCard; set => cashInDebitCard = value; }
+        public double CashInCreditCard { get => cashInCreditCard; set => cashInCreditCard = value; }
+        public double CashInCheck { get => cashInCheck; set => cashInCheck = value; }
+        public DateTime WasCreated { get => wasCreated; set => wasCreated = value; }
+        public int[] Money { get => money; set => money = value; }
     }
 }

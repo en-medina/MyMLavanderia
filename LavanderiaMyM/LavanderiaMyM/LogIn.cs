@@ -28,12 +28,12 @@ namespace LavanderiaMyM
             string password = LogIn_password.Text.ToString();
             if(check.checkString(username,30)&& check.checkString(password, 25))
             {
-                string name = database.authUser(username, password);
-                if (name != null)
+                Employee employee = database.authUser(username, password);
+                if (employee.Name != null)
                 {
                     PrincipalMenu principalMenu = new PrincipalMenu();
                     sendValue sendValue = new sendValue(principalMenu.receiveData);
-                    sendValue(0, name, username, this);
+                    sendValue(employee.Id, employee.Name, username, this);
                     principalMenu.Show();
                     this.Visible = false;
                 }

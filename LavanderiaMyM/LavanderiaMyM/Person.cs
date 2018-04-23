@@ -19,9 +19,18 @@ namespace LavanderiaMyM
         
         protected Person(int pid, string pname)
         {
-            id = pid;
-            name = pname;
+            Id = pid;
+            Name = pname;
         }
+
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public string NationalID { get => nationalID; set => nationalID = value; }
+        public DateTime Birthday { get => birthday; set => birthday = value; }
+        public string Telephone { get => telephone; set => telephone = value; }
+        public string Email { get => email; set => email = value; }
+        public string Address { get => address; set => address = value; }
+        public string Celphone1 { get => Celphone; set => Celphone = value; }
     }
     class Employee : Person
     {

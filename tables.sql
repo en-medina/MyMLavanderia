@@ -36,9 +36,20 @@ create table Scheduler(
 	constraint _pk_schedulerID primary key clustered(schedulerID),
 	constraint _fk_employeeID foreign key(fk_employeeID) references Employee(employeeID)
 )
+create table Hash(
+	hashID int not null identity(1,1),
+	fk_employeeID int,
+	hashcode binary(32),
+
+	constraint _pk_hashID primary key clustered(hashID),
+	constraint _fk_hash_employeeID foreign key(employeeID) references Employee(employeeID),
+)
+
+
+
 create table Customer(
 	customerID int not null identity(1,1),
-
+	username varchar(15),
 	name varchar(30),
 	nationalID varchar(11),
 	birthday datetime,
@@ -150,22 +161,22 @@ create table Expense(
 
 create table CashBox(
 	cashboxID int not null identity(1,1),
-	
+	fk_employeeID int,
 	cashInDebitCard money,
 	cashInCreditCard money,
 	cashInCheck money,
 
-	m2000 smallmoney,
-	m1000 smallmoney,
-	m500 smallmoney,
-	m200 smallmoney,
-	m100 smallmoney,
-	m50 smallmoney,
-	m25 smallmoney,
-	m20 smallmoney,
-	m10 smallmoney,
-	m5 smallmoney,
-	m1 smallmoney,
+	m2000 smallint,
+	m1000 smallint,
+	m500 smallint,
+	m200 smallint,
+	m100 smallint,
+	m50 smallint,
+	m25 smallint,
+	m20 smallint,
+	m10 smallint,
+	m5 smallint,
+	m1 smallint,
 
 	leftOver int,
 	grossMoney money,
@@ -175,8 +186,8 @@ create table CashBox(
 
 	isBoxClose bit,
 	wasCreated datetime,
-	fk_employeeID int,
 
+	unbalance money
 
 	constraint _pk_cashboxID primary key clustered(cashboxID),
 	constraint _fk_employeeID_cabx foreign key(fk_employeeID) references Employee(employeeID)	
