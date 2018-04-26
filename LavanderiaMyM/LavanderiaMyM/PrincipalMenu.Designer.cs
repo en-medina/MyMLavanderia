@@ -100,7 +100,8 @@
             this.customer_initService_button = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -118,7 +119,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.label30);
             this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.customer_initService_button);
@@ -161,7 +163,7 @@
             // search_for_textBox
             // 
             this.search_for_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_for_textBox.Location = new System.Drawing.Point(711, 61);
+            this.search_for_textBox.Location = new System.Drawing.Point(738, 61);
             this.search_for_textBox.Name = "search_for_textBox";
             this.search_for_textBox.Size = new System.Drawing.Size(165, 30);
             this.search_for_textBox.TabIndex = 54;
@@ -170,7 +172,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(573, 61);
+            this.label26.Location = new System.Drawing.Point(600, 61);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(132, 25);
             this.label26.TabIndex = 53;
@@ -185,7 +187,7 @@
             "Cédula",
             "Cel/Tel",
             "Email"});
-            this.search_type_comboBox.Location = new System.Drawing.Point(317, 61);
+            this.search_type_comboBox.Location = new System.Drawing.Point(329, 58);
             this.search_type_comboBox.Name = "search_type_comboBox";
             this.search_type_comboBox.Size = new System.Drawing.Size(217, 33);
             this.search_type_comboBox.TabIndex = 52;
@@ -195,7 +197,7 @@
             // customer_add_button
             // 
             this.customer_add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_add_button.Location = new System.Drawing.Point(24, 558);
+            this.customer_add_button.Location = new System.Drawing.Point(37, 558);
             this.customer_add_button.Name = "customer_add_button";
             this.customer_add_button.Size = new System.Drawing.Size(261, 46);
             this.customer_add_button.TabIndex = 51;
@@ -206,7 +208,7 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(120, 333);
+            this.radioButton7.Location = new System.Drawing.Point(120, 368);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(81, 29);
             this.radioButton7.TabIndex = 26;
@@ -218,7 +220,7 @@
             // 
             this.customer_notes_textBox.Location = new System.Drawing.Point(24, 473);
             this.customer_notes_textBox.Name = "customer_notes_textBox";
-            this.customer_notes_textBox.Size = new System.Drawing.Size(261, 68);
+            this.customer_notes_textBox.Size = new System.Drawing.Size(287, 68);
             this.customer_notes_textBox.TabIndex = 25;
             this.customer_notes_textBox.Text = "";
             // 
@@ -236,7 +238,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(255, 338);
+            this.label27.Location = new System.Drawing.Point(255, 368);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(30, 25);
             this.label27.TabIndex = 23;
@@ -246,7 +248,7 @@
             // 
             this.customer_custom_percent_textBox.Enabled = false;
             this.customer_custom_percent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 333);
+            this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 367);
             this.customer_custom_percent_textBox.Name = "customer_custom_percent_textBox";
             this.customer_custom_percent_textBox.Size = new System.Drawing.Size(42, 30);
             this.customer_custom_percent_textBox.TabIndex = 22;
@@ -255,7 +257,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(24, 333);
+            this.radioButton6.Location = new System.Drawing.Point(24, 364);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(77, 29);
             this.radioButton6.TabIndex = 17;
@@ -267,7 +269,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(208, 298);
+            this.radioButton3.Location = new System.Drawing.Point(207, 329);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(77, 29);
             this.radioButton3.TabIndex = 16;
@@ -279,7 +281,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(120, 298);
+            this.radioButton2.Location = new System.Drawing.Point(120, 329);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(66, 29);
             this.radioButton2.TabIndex = 15;
@@ -291,7 +293,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(24, 298);
+            this.radioButton1.Location = new System.Drawing.Point(24, 329);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(66, 29);
             this.radioButton1.TabIndex = 14;
@@ -303,7 +305,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(89, 261);
+            this.label25.Location = new System.Drawing.Point(95, 301);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(106, 25);
             this.label25.TabIndex = 13;
@@ -312,7 +314,7 @@
             // customer_email_textBox
             // 
             this.customer_email_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_email_textBox.Location = new System.Drawing.Point(120, 208);
+            this.customer_email_textBox.Location = new System.Drawing.Point(146, 208);
             this.customer_email_textBox.Name = "customer_email_textBox";
             this.customer_email_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_email_textBox.TabIndex = 12;
@@ -321,7 +323,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(50, 213);
+            this.label24.Location = new System.Drawing.Point(74, 213);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(66, 25);
             this.label24.TabIndex = 11;
@@ -330,7 +332,7 @@
             // customer_tel_textBox
             // 
             this.customer_tel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_tel_textBox.Location = new System.Drawing.Point(120, 172);
+            this.customer_tel_textBox.Location = new System.Drawing.Point(146, 172);
             this.customer_tel_textBox.Name = "customer_tel_textBox";
             this.customer_tel_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_tel_textBox.TabIndex = 10;
@@ -339,7 +341,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(19, 177);
+            this.label22.Location = new System.Drawing.Point(45, 177);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 25);
             this.label22.TabIndex = 9;
@@ -348,7 +350,7 @@
             // customer_cel_textBox
             // 
             this.customer_cel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_cel_textBox.Location = new System.Drawing.Point(120, 136);
+            this.customer_cel_textBox.Location = new System.Drawing.Point(146, 136);
             this.customer_cel_textBox.Name = "customer_cel_textBox";
             this.customer_cel_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_cel_textBox.TabIndex = 8;
@@ -357,7 +359,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(34, 141);
+            this.label23.Location = new System.Drawing.Point(60, 141);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(80, 25);
             this.label23.TabIndex = 7;
@@ -366,7 +368,7 @@
             // customer_id_textBox
             // 
             this.customer_id_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_id_textBox.Location = new System.Drawing.Point(120, 100);
+            this.customer_id_textBox.Location = new System.Drawing.Point(146, 100);
             this.customer_id_textBox.Name = "customer_id_textBox";
             this.customer_id_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_id_textBox.TabIndex = 6;
@@ -375,7 +377,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(11, 105);
+            this.label21.Location = new System.Drawing.Point(32, 105);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(108, 25);
             this.label21.TabIndex = 5;
@@ -384,7 +386,7 @@
             // customer_name_textBox
             // 
             this.customer_name_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_name_textBox.Location = new System.Drawing.Point(120, 64);
+            this.customer_name_textBox.Location = new System.Drawing.Point(146, 64);
             this.customer_name_textBox.Name = "customer_name_textBox";
             this.customer_name_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_name_textBox.TabIndex = 4;
@@ -393,7 +395,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(27, 69);
+            this.label20.Location = new System.Drawing.Point(53, 69);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(87, 25);
             this.label20.TabIndex = 2;
@@ -824,16 +826,16 @@
             // 
             // customer_listView
             // 
-            this.customer_listView.Location = new System.Drawing.Point(317, 109);
+            this.customer_listView.Location = new System.Drawing.Point(329, 109);
             this.customer_listView.Name = "customer_listView";
-            this.customer_listView.Size = new System.Drawing.Size(558, 432);
+            this.customer_listView.Size = new System.Drawing.Size(574, 432);
             this.customer_listView.TabIndex = 55;
             this.customer_listView.UseCompatibleStateImageBehavior = false;
             // 
             // customer_modify_button
             // 
             this.customer_modify_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_modify_button.Location = new System.Drawing.Point(317, 558);
+            this.customer_modify_button.Location = new System.Drawing.Point(329, 558);
             this.customer_modify_button.Name = "customer_modify_button";
             this.customer_modify_button.Size = new System.Drawing.Size(261, 46);
             this.customer_modify_button.TabIndex = 56;
@@ -843,7 +845,7 @@
             // customer_initService_button
             // 
             this.customer_initService_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_initService_button.Location = new System.Drawing.Point(615, 558);
+            this.customer_initService_button.Location = new System.Drawing.Point(642, 558);
             this.customer_initService_button.Name = "customer_initService_button";
             this.customer_initService_button.Size = new System.Drawing.Size(261, 46);
             this.customer_initService_button.TabIndex = 57;
@@ -854,7 +856,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(501, 24);
+            this.label29.Location = new System.Drawing.Point(528, 24);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(204, 25);
             this.label29.TabIndex = 58;
@@ -864,23 +866,31 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(24, 369);
+            this.checkBox1.Location = new System.Drawing.Point(24, 403);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(247, 29);
+            this.checkBox1.Size = new System.Drawing.Size(299, 29);
             this.checkBox1.TabIndex = 59;
-            this.checkBox1.Text = "Puede recibir Whatsapp";
+            this.checkBox1.Text = "Puede recibir Whatsapp/email";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // label30
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(24, 403);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(212, 29);
-            this.checkBox2.TabIndex = 60;
-            this.checkBox2.Text = "Puede recibir correo";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(11, 249);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(129, 25);
+            this.label30.TabIndex = 60;
+            this.label30.Text = "Cumpleaños:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(147, 249);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(164, 30);
+            this.dateTimePicker1.TabIndex = 61;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 4, 26, 0, 0, 0, 0);
             // 
             // PrincipalMenu
             // 
@@ -972,7 +982,8 @@
         private System.Windows.Forms.Button customer_initService_button;
         private System.Windows.Forms.Button customer_modify_button;
         private System.Windows.Forms.ListView customer_listView;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label30;
     }
 }
