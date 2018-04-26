@@ -40,6 +40,7 @@ namespace LavanderiaMyM
                 return null;
             }
         }
+        
         public CashBox insertCashBox(CashBox cashBox)
         {
             SqlParameter output1 = new SqlParameter("@result", SqlDbType.Money);

@@ -67,4 +67,32 @@ namespace LavanderiaMyM
             CouldModifyExpenses = couldModifyExpenses;
         }
     }
+
+    class Customer : Person
+    {
+        bool sendWhatsapp;
+        string notes;
+        int discount;
+        int createdById;
+        int modifiedById;
+        protected Customer(int pid, string pname, string nationalId, DateTime birthday, string cellphone, 
+            string telephone, bool sendWhatsapp, string email, int discount, string notes) : 
+            base(pid, pname)
+        {
+            NationalID = nationalId;
+            Birthday = birthday;
+            Celphone1 = cellphone;
+            Telephone = telephone;
+            SendWhatsapp = sendWhatsapp;
+            Email = email;
+            Discount = discount;
+            Notes = notes;
+        }
+
+        public bool SendWhatsapp { get => sendWhatsapp; set => sendWhatsapp = value; }
+        public string Notes { get => notes; set => notes = value; }
+        public int Discount { get => discount; set => discount = value; }
+        public int CreatedById { get => createdById; set => createdById = value; }
+        public int ModifiedById { get => modifiedById; set => modifiedById = value; }
+    }
 }
