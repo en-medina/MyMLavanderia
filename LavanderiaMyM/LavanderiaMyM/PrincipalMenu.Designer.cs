@@ -30,6 +30,34 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.search_for_textBox = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.search_type_comboBox = new System.Windows.Forms.ComboBox();
+            this.customer_add_button = new System.Windows.Forms.Button();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.customer_notes_textBox = new System.Windows.Forms.RichTextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.customer_custom_percent_textBox = new System.Windows.Forms.TextBox();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label25 = new System.Windows.Forms.Label();
+            this.customer_email_textBox = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.customer_tel_textBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.customer_cel_textBox = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.customer_id_textBox = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.customer_name_textBox = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cashBoxdateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.cashBoxdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -70,7 +98,12 @@
             this.EnterCashButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCashBoxEmployeeName = new System.Windows.Forms.Label();
+            this.customer_listView = new System.Windows.Forms.ListView();
+            this.customer_modify_button = new System.Windows.Forms.Button();
+            this.customer_initService_button = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,14 +119,333 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label29);
+            this.tabPage1.Controls.Add(this.customer_initService_button);
+            this.tabPage1.Controls.Add(this.customer_modify_button);
+            this.tabPage1.Controls.Add(this.customer_listView);
+            this.tabPage1.Controls.Add(this.search_for_textBox);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.search_type_comboBox);
+            this.tabPage1.Controls.Add(this.customer_add_button);
+            this.tabPage1.Controls.Add(this.radioButton7);
+            this.tabPage1.Controls.Add(this.customer_notes_textBox);
+            this.tabPage1.Controls.Add(this.label28);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.customer_custom_percent_textBox);
+            this.tabPage1.Controls.Add(this.radioButton9);
+            this.tabPage1.Controls.Add(this.radioButton4);
+            this.tabPage1.Controls.Add(this.radioButton5);
+            this.tabPage1.Controls.Add(this.radioButton6);
+            this.tabPage1.Controls.Add(this.radioButton3);
+            this.tabPage1.Controls.Add(this.radioButton2);
+            this.tabPage1.Controls.Add(this.radioButton1);
+            this.tabPage1.Controls.Add(this.label25);
+            this.tabPage1.Controls.Add(this.customer_email_textBox);
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.customer_tel_textBox);
+            this.tabPage1.Controls.Add(this.label22);
+            this.tabPage1.Controls.Add(this.customer_cel_textBox);
+            this.tabPage1.Controls.Add(this.label23);
+            this.tabPage1.Controls.Add(this.customer_id_textBox);
+            this.tabPage1.Controls.Add(this.label21);
+            this.tabPage1.Controls.Add(this.customer_name_textBox);
+            this.tabPage1.Controls.Add(this.label20);
+            this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(919, 632);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Clientes";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // search_for_textBox
+            // 
+            this.search_for_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_for_textBox.Location = new System.Drawing.Point(711, 61);
+            this.search_for_textBox.Name = "search_for_textBox";
+            this.search_for_textBox.Size = new System.Drawing.Size(165, 30);
+            this.search_for_textBox.TabIndex = 54;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(573, 61);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(132, 25);
+            this.label26.TabIndex = 53;
+            this.label26.Text = "Buscar como:";
+            // 
+            // search_type_comboBox
+            // 
+            this.search_type_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_type_comboBox.FormattingEnabled = true;
+            this.search_type_comboBox.Items.AddRange(new object[] {
+            "Nombre",
+            "Cédula",
+            "Cel/Tel",
+            "Email"});
+            this.search_type_comboBox.Location = new System.Drawing.Point(317, 61);
+            this.search_type_comboBox.Name = "search_type_comboBox";
+            this.search_type_comboBox.Size = new System.Drawing.Size(217, 33);
+            this.search_type_comboBox.TabIndex = 52;
+            this.search_type_comboBox.Tag = "0";
+            this.search_type_comboBox.Text = "Forma de Búsqueda";
+            // 
+            // customer_add_button
+            // 
+            this.customer_add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_add_button.Location = new System.Drawing.Point(24, 558);
+            this.customer_add_button.Name = "customer_add_button";
+            this.customer_add_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_add_button.TabIndex = 51;
+            this.customer_add_button.Text = "Agregar";
+            this.customer_add_button.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton7.Location = new System.Drawing.Point(120, 366);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(81, 29);
+            this.radioButton7.TabIndex = 26;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Otro:";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // customer_notes_textBox
+            // 
+            this.customer_notes_textBox.Location = new System.Drawing.Point(24, 452);
+            this.customer_notes_textBox.Name = "customer_notes_textBox";
+            this.customer_notes_textBox.Size = new System.Drawing.Size(261, 89);
+            this.customer_notes_textBox.TabIndex = 25;
+            this.customer_notes_textBox.Text = "";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(123, 415);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(63, 25);
+            this.label28.TabIndex = 24;
+            this.label28.Text = "Notas";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(255, 370);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(30, 25);
+            this.label27.TabIndex = 23;
+            this.label27.Text = "%";
+            // 
+            // customer_custom_percent_textBox
+            // 
+            this.customer_custom_percent_textBox.Enabled = false;
+            this.customer_custom_percent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 367);
+            this.customer_custom_percent_textBox.Name = "customer_custom_percent_textBox";
+            this.customer_custom_percent_textBox.Size = new System.Drawing.Size(42, 30);
+            this.customer_custom_percent_textBox.TabIndex = 22;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton9.Location = new System.Drawing.Point(24, 368);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(77, 29);
+            this.radioButton9.TabIndex = 20;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "50%";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(208, 333);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(77, 29);
+            this.radioButton4.TabIndex = 19;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "25%";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(120, 333);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(77, 29);
+            this.radioButton5.TabIndex = 18;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "20%";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(24, 333);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(77, 29);
+            this.radioButton6.TabIndex = 17;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "15%";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(208, 298);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(77, 29);
+            this.radioButton3.TabIndex = 16;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "10%";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(120, 298);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(66, 29);
+            this.radioButton2.TabIndex = 15;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "5%";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(24, 298);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(66, 29);
+            this.radioButton1.TabIndex = 14;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "0%";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(19, 255);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 25);
+            this.label25.TabIndex = 13;
+            this.label25.Text = "Descuento:";
+            // 
+            // customer_email_textBox
+            // 
+            this.customer_email_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_email_textBox.Location = new System.Drawing.Point(120, 208);
+            this.customer_email_textBox.Name = "customer_email_textBox";
+            this.customer_email_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_email_textBox.TabIndex = 12;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(50, 213);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(66, 25);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Email:";
+            // 
+            // customer_tel_textBox
+            // 
+            this.customer_tel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_tel_textBox.Location = new System.Drawing.Point(120, 172);
+            this.customer_tel_textBox.Name = "customer_tel_textBox";
+            this.customer_tel_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_tel_textBox.TabIndex = 10;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(19, 177);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(95, 25);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Teléfono:";
+            // 
+            // customer_cel_textBox
+            // 
+            this.customer_cel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_cel_textBox.Location = new System.Drawing.Point(120, 136);
+            this.customer_cel_textBox.Name = "customer_cel_textBox";
+            this.customer_cel_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_cel_textBox.TabIndex = 8;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(34, 141);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(80, 25);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "Celular:";
+            // 
+            // customer_id_textBox
+            // 
+            this.customer_id_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_id_textBox.Location = new System.Drawing.Point(120, 100);
+            this.customer_id_textBox.Name = "customer_id_textBox";
+            this.customer_id_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_id_textBox.TabIndex = 6;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(11, 105);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(108, 25);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "RNC/Ced.:";
+            // 
+            // customer_name_textBox
+            // 
+            this.customer_name_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_name_textBox.Location = new System.Drawing.Point(120, 64);
+            this.customer_name_textBox.Name = "customer_name_textBox";
+            this.customer_name_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_name_textBox.TabIndex = 4;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(27, 69);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(87, 25);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Nombre:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(55, 24);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(194, 25);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Creación de Clientes";
             // 
             // tabPage2
             // 
@@ -508,6 +860,44 @@
             this.labelCashBoxEmployeeName.Text = "Buenos Días, *****";
             this.labelCashBoxEmployeeName.Click += new System.EventHandler(this.label1_Click);
             // 
+            // customer_listView
+            // 
+            this.customer_listView.Location = new System.Drawing.Point(317, 109);
+            this.customer_listView.Name = "customer_listView";
+            this.customer_listView.Size = new System.Drawing.Size(558, 432);
+            this.customer_listView.TabIndex = 55;
+            this.customer_listView.UseCompatibleStateImageBehavior = false;
+            // 
+            // customer_modify_button
+            // 
+            this.customer_modify_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_modify_button.Location = new System.Drawing.Point(317, 558);
+            this.customer_modify_button.Name = "customer_modify_button";
+            this.customer_modify_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_modify_button.TabIndex = 56;
+            this.customer_modify_button.Text = "Modificar";
+            this.customer_modify_button.UseVisualStyleBackColor = true;
+            // 
+            // customer_initService_button
+            // 
+            this.customer_initService_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_initService_button.Location = new System.Drawing.Point(615, 558);
+            this.customer_initService_button.Name = "customer_initService_button";
+            this.customer_initService_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_initService_button.TabIndex = 57;
+            this.customer_initService_button.Text = "Dar Servicio";
+            this.customer_initService_button.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(501, 24);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(204, 25);
+            this.label29.TabIndex = 58;
+            this.label29.Text = "Busqueda de Clientes";
+            // 
             // PrincipalMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -517,6 +907,8 @@
             this.Name = "PrincipalMenu";
             this.Text = "Form2";
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
@@ -567,5 +959,37 @@
         private System.Windows.Forms.Button eraseCashButton;
         private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker2;
         private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker1;
+        private System.Windows.Forms.TextBox search_for_textBox;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox search_type_comboBox;
+        private System.Windows.Forms.Button customer_add_button;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RichTextBox customer_notes_textBox;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox customer_custom_percent_textBox;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox customer_email_textBox;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox customer_tel_textBox;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox customer_cel_textBox;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox customer_id_textBox;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox customer_name_textBox;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Button customer_initService_button;
+        private System.Windows.Forms.Button customer_modify_button;
+        private System.Windows.Forms.ListView customer_listView;
     }
 }
