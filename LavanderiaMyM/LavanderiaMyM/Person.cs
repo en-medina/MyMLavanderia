@@ -17,9 +17,8 @@ namespace LavanderiaMyM
         string address;
         string Celphone;
         
-        protected Person(int pid, string pname)
+        protected Person(string pname)
         {
-            Id = pid;
             Name = pname;
         }
 
@@ -45,8 +44,9 @@ namespace LavanderiaMyM
         bool couldModifyExpenses;
 
         bool isActive;
-        public Employee(int pid, string pname, string pusername, double pmaxDiscount) : base (pid, pname)
+        public Employee(int pid, string pname, string pusername, double pmaxDiscount) : base (pname)
         {
+            Id = pid;
             username = pusername;
             maxDiscount = pmaxDiscount;
         }
@@ -75,9 +75,9 @@ namespace LavanderiaMyM
         int discount;
         int createdById;
         int modifiedById;
-        protected Customer(int pid, string pname, string nationalId, DateTime birthday, string cellphone, 
+        protected Customer(string pname, string nationalId, DateTime birthday, string cellphone, 
             string telephone, bool sendWhatsapp, string email, int discount, string notes) : 
-            base(pid, pname)
+            base(pname)
         {
             NationalID = nationalId;
             Birthday = birthday;
