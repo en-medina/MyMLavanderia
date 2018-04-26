@@ -39,9 +39,6 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.customer_custom_percent_textBox = new System.Windows.Forms.TextBox();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -102,6 +99,8 @@
             this.customer_modify_button = new System.Windows.Forms.Button();
             this.customer_initService_button = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -119,6 +118,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.customer_initService_button);
             this.tabPage1.Controls.Add(this.customer_modify_button);
@@ -132,9 +133,6 @@
             this.tabPage1.Controls.Add(this.label28);
             this.tabPage1.Controls.Add(this.label27);
             this.tabPage1.Controls.Add(this.customer_custom_percent_textBox);
-            this.tabPage1.Controls.Add(this.radioButton9);
-            this.tabPage1.Controls.Add(this.radioButton4);
-            this.tabPage1.Controls.Add(this.radioButton5);
             this.tabPage1.Controls.Add(this.radioButton6);
             this.tabPage1.Controls.Add(this.radioButton3);
             this.tabPage1.Controls.Add(this.radioButton2);
@@ -208,7 +206,7 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(120, 366);
+            this.radioButton7.Location = new System.Drawing.Point(120, 333);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(81, 29);
             this.radioButton7.TabIndex = 26;
@@ -218,9 +216,9 @@
             // 
             // customer_notes_textBox
             // 
-            this.customer_notes_textBox.Location = new System.Drawing.Point(24, 452);
+            this.customer_notes_textBox.Location = new System.Drawing.Point(24, 473);
             this.customer_notes_textBox.Name = "customer_notes_textBox";
-            this.customer_notes_textBox.Size = new System.Drawing.Size(261, 89);
+            this.customer_notes_textBox.Size = new System.Drawing.Size(261, 68);
             this.customer_notes_textBox.TabIndex = 25;
             this.customer_notes_textBox.Text = "";
             // 
@@ -228,7 +226,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(123, 415);
+            this.label28.Location = new System.Drawing.Point(115, 435);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(63, 25);
             this.label28.TabIndex = 24;
@@ -238,7 +236,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(255, 370);
+            this.label27.Location = new System.Drawing.Point(255, 338);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(30, 25);
             this.label27.TabIndex = 23;
@@ -248,46 +246,10 @@
             // 
             this.customer_custom_percent_textBox.Enabled = false;
             this.customer_custom_percent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 367);
+            this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 333);
             this.customer_custom_percent_textBox.Name = "customer_custom_percent_textBox";
             this.customer_custom_percent_textBox.Size = new System.Drawing.Size(42, 30);
             this.customer_custom_percent_textBox.TabIndex = 22;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(24, 368);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(77, 29);
-            this.radioButton9.TabIndex = 20;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "50%";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(208, 333);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(77, 29);
-            this.radioButton4.TabIndex = 19;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "25%";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(120, 333);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(77, 29);
-            this.radioButton5.TabIndex = 18;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "20%";
-            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton6
             // 
@@ -341,11 +303,11 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(19, 255);
+            this.label25.Location = new System.Drawing.Point(89, 261);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(112, 25);
+            this.label25.Size = new System.Drawing.Size(106, 25);
             this.label25.TabIndex = 13;
-            this.label25.Text = "Descuento:";
+            this.label25.Text = "Descuento\r\n";
             // 
             // customer_email_textBox
             // 
@@ -898,6 +860,28 @@
             this.label29.TabIndex = 58;
             this.label29.Text = "Busqueda de Clientes";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(24, 369);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(247, 29);
+            this.checkBox1.TabIndex = 59;
+            this.checkBox1.Text = "Puede recibir Whatsapp";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(24, 403);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(212, 29);
+            this.checkBox2.TabIndex = 60;
+            this.checkBox2.Text = "Puede recibir correo";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // PrincipalMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -968,9 +952,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox customer_custom_percent_textBox;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -991,5 +972,7 @@
         private System.Windows.Forms.Button customer_initService_button;
         private System.Windows.Forms.Button customer_modify_button;
         private System.Windows.Forms.ListView customer_listView;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
