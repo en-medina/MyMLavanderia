@@ -75,7 +75,7 @@ namespace LavanderiaMyM
         int discount;
         int createdById;
         int modifiedById;
-        protected Customer(string pname, string nationalId, DateTime birthday, string cellphone, 
+        public Customer(string pname, string nationalId, DateTime birthday, string cellphone, 
             string telephone, bool sendWhatsapp, string email, int discount, string notes) : 
             base(pname)
         {
@@ -87,6 +87,7 @@ namespace LavanderiaMyM
             Email = email;
             Discount = discount;
             Notes = notes;
+            Address = "";
         }
 
         public bool SendWhatsapp { get => sendWhatsapp; set => sendWhatsapp = value; }

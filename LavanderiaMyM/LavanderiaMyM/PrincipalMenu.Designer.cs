@@ -30,9 +30,16 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.search_for_textBox = new System.Windows.Forms.TextBox();
+            this.customer_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label30 = new System.Windows.Forms.Label();
+            this.customer_allowedWS_checkBox = new System.Windows.Forms.CheckBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.customer_initService_button = new System.Windows.Forms.Button();
+            this.customer_modify_button = new System.Windows.Forms.Button();
+            this.listViewCustomer = new System.Windows.Forms.ListView();
+            this.customer_search_for_textBox = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.search_type_comboBox = new System.Windows.Forms.ComboBox();
+            this.customer_search_type_comboBox = new System.Windows.Forms.ComboBox();
             this.customer_add_button = new System.Windows.Forms.Button();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.customer_notes_textBox = new System.Windows.Forms.RichTextBox();
@@ -95,13 +102,6 @@
             this.EnterCashButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCashBoxEmployeeName = new System.Windows.Forms.Label();
-            this.customer_listView = new System.Windows.Forms.ListView();
-            this.customer_modify_button = new System.Windows.Forms.Button();
-            this.customer_initService_button = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -119,16 +119,16 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.customer_dateTimePicker);
             this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.checkBox1);
+            this.tabPage1.Controls.Add(this.customer_allowedWS_checkBox);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.customer_initService_button);
             this.tabPage1.Controls.Add(this.customer_modify_button);
-            this.tabPage1.Controls.Add(this.customer_listView);
-            this.tabPage1.Controls.Add(this.search_for_textBox);
+            this.tabPage1.Controls.Add(this.listViewCustomer);
+            this.tabPage1.Controls.Add(this.customer_search_for_textBox);
             this.tabPage1.Controls.Add(this.label26);
-            this.tabPage1.Controls.Add(this.search_type_comboBox);
+            this.tabPage1.Controls.Add(this.customer_search_type_comboBox);
             this.tabPage1.Controls.Add(this.customer_add_button);
             this.tabPage1.Controls.Add(this.radioButton7);
             this.tabPage1.Controls.Add(this.customer_notes_textBox);
@@ -160,13 +160,86 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // search_for_textBox
+            // customer_dateTimePicker
             // 
-            this.search_for_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_for_textBox.Location = new System.Drawing.Point(738, 61);
-            this.search_for_textBox.Name = "search_for_textBox";
-            this.search_for_textBox.Size = new System.Drawing.Size(165, 30);
-            this.search_for_textBox.TabIndex = 54;
+            this.customer_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_dateTimePicker.Location = new System.Drawing.Point(147, 249);
+            this.customer_dateTimePicker.Name = "customer_dateTimePicker";
+            this.customer_dateTimePicker.Size = new System.Drawing.Size(164, 30);
+            this.customer_dateTimePicker.TabIndex = 61;
+            this.customer_dateTimePicker.Value = new System.DateTime(2018, 4, 26, 0, 0, 0, 0);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(11, 249);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(129, 25);
+            this.label30.TabIndex = 60;
+            this.label30.Text = "Cumpleaños:";
+            // 
+            // customer_allowedWS_checkBox
+            // 
+            this.customer_allowedWS_checkBox.AutoSize = true;
+            this.customer_allowedWS_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_allowedWS_checkBox.Location = new System.Drawing.Point(16, 403);
+            this.customer_allowedWS_checkBox.Name = "customer_allowedWS_checkBox";
+            this.customer_allowedWS_checkBox.Size = new System.Drawing.Size(299, 29);
+            this.customer_allowedWS_checkBox.TabIndex = 59;
+            this.customer_allowedWS_checkBox.Text = "Puede recibir Whatsapp/email";
+            this.customer_allowedWS_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(528, 24);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(204, 25);
+            this.label29.TabIndex = 58;
+            this.label29.Text = "Busqueda de Clientes";
+            // 
+            // customer_initService_button
+            // 
+            this.customer_initService_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_initService_button.Location = new System.Drawing.Point(642, 558);
+            this.customer_initService_button.Name = "customer_initService_button";
+            this.customer_initService_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_initService_button.TabIndex = 57;
+            this.customer_initService_button.Text = "Dar Servicio";
+            this.customer_initService_button.UseVisualStyleBackColor = true;
+            // 
+            // customer_modify_button
+            // 
+            this.customer_modify_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_modify_button.Location = new System.Drawing.Point(329, 558);
+            this.customer_modify_button.Name = "customer_modify_button";
+            this.customer_modify_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_modify_button.TabIndex = 56;
+            this.customer_modify_button.Text = "Modificar";
+            this.customer_modify_button.UseVisualStyleBackColor = true;
+            this.customer_modify_button.Click += new System.EventHandler(this.customer_modify_button_Click);
+            // 
+            // listViewCustomer
+            // 
+            this.listViewCustomer.HideSelection = false;
+            this.listViewCustomer.Location = new System.Drawing.Point(329, 109);
+            this.listViewCustomer.MultiSelect = false;
+            this.listViewCustomer.Name = "listViewCustomer";
+            this.listViewCustomer.Size = new System.Drawing.Size(574, 432);
+            this.listViewCustomer.TabIndex = 55;
+            this.listViewCustomer.UseCompatibleStateImageBehavior = false;
+            this.listViewCustomer.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListViewCustomer_DoubleClick);
+            // 
+            // customer_search_for_textBox
+            // 
+            this.customer_search_for_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_search_for_textBox.Location = new System.Drawing.Point(738, 61);
+            this.customer_search_for_textBox.Name = "customer_search_for_textBox";
+            this.customer_search_for_textBox.Size = new System.Drawing.Size(165, 30);
+            this.customer_search_for_textBox.TabIndex = 54;
+            this.customer_search_for_textBox.TextChanged += new System.EventHandler(this.Search_for_textBox_TextChanged);
             // 
             // label26
             // 
@@ -178,31 +251,32 @@
             this.label26.TabIndex = 53;
             this.label26.Text = "Buscar como:";
             // 
-            // search_type_comboBox
+            // customer_search_type_comboBox
             // 
-            this.search_type_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_type_comboBox.FormattingEnabled = true;
-            this.search_type_comboBox.Items.AddRange(new object[] {
+            this.customer_search_type_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customer_search_type_comboBox.FormattingEnabled = true;
+            this.customer_search_type_comboBox.Items.AddRange(new object[] {
             "Nombre",
             "Cédula",
             "Cel/Tel",
             "Email"});
-            this.search_type_comboBox.Location = new System.Drawing.Point(329, 58);
-            this.search_type_comboBox.Name = "search_type_comboBox";
-            this.search_type_comboBox.Size = new System.Drawing.Size(217, 33);
-            this.search_type_comboBox.TabIndex = 52;
-            this.search_type_comboBox.Tag = "0";
-            this.search_type_comboBox.Text = "Forma de Búsqueda";
+            this.customer_search_type_comboBox.Location = new System.Drawing.Point(329, 58);
+            this.customer_search_type_comboBox.Name = "customer_search_type_comboBox";
+            this.customer_search_type_comboBox.Size = new System.Drawing.Size(217, 33);
+            this.customer_search_type_comboBox.TabIndex = 52;
+            this.customer_search_type_comboBox.Tag = "0";
+            this.customer_search_type_comboBox.Text = "Forma de Búsqueda";
             // 
             // customer_add_button
             // 
             this.customer_add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_add_button.Location = new System.Drawing.Point(37, 558);
+            this.customer_add_button.Location = new System.Drawing.Point(24, 558);
             this.customer_add_button.Name = "customer_add_button";
-            this.customer_add_button.Size = new System.Drawing.Size(261, 46);
+            this.customer_add_button.Size = new System.Drawing.Size(287, 46);
             this.customer_add_button.TabIndex = 51;
             this.customer_add_button.Text = "Agregar";
             this.customer_add_button.UseVisualStyleBackColor = true;
+            this.customer_add_button.Click += new System.EventHandler(this.Customer_add_button_Click);
             // 
             // radioButton7
             // 
@@ -219,6 +293,7 @@
             // customer_notes_textBox
             // 
             this.customer_notes_textBox.Location = new System.Drawing.Point(24, 473);
+            this.customer_notes_textBox.MaxLength = 50;
             this.customer_notes_textBox.Name = "customer_notes_textBox";
             this.customer_notes_textBox.Size = new System.Drawing.Size(287, 68);
             this.customer_notes_textBox.TabIndex = 25;
@@ -228,7 +303,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(115, 435);
+            this.label28.Location = new System.Drawing.Point(142, 435);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(63, 25);
             this.label28.TabIndex = 24;
@@ -249,6 +324,7 @@
             this.customer_custom_percent_textBox.Enabled = false;
             this.customer_custom_percent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_custom_percent_textBox.Location = new System.Drawing.Point(207, 367);
+            this.customer_custom_percent_textBox.MaxLength = 2;
             this.customer_custom_percent_textBox.Name = "customer_custom_percent_textBox";
             this.customer_custom_percent_textBox.Size = new System.Drawing.Size(42, 30);
             this.customer_custom_percent_textBox.TabIndex = 22;
@@ -315,6 +391,7 @@
             // 
             this.customer_email_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_email_textBox.Location = new System.Drawing.Point(146, 208);
+            this.customer_email_textBox.MaxLength = 30;
             this.customer_email_textBox.Name = "customer_email_textBox";
             this.customer_email_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_email_textBox.TabIndex = 12;
@@ -333,6 +410,7 @@
             // 
             this.customer_tel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_tel_textBox.Location = new System.Drawing.Point(146, 172);
+            this.customer_tel_textBox.MaxLength = 17;
             this.customer_tel_textBox.Name = "customer_tel_textBox";
             this.customer_tel_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_tel_textBox.TabIndex = 10;
@@ -351,6 +429,7 @@
             // 
             this.customer_cel_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_cel_textBox.Location = new System.Drawing.Point(146, 136);
+            this.customer_cel_textBox.MaxLength = 17;
             this.customer_cel_textBox.Name = "customer_cel_textBox";
             this.customer_cel_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_cel_textBox.TabIndex = 8;
@@ -369,6 +448,7 @@
             // 
             this.customer_id_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_id_textBox.Location = new System.Drawing.Point(146, 100);
+            this.customer_id_textBox.MaxLength = 11;
             this.customer_id_textBox.Name = "customer_id_textBox";
             this.customer_id_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_id_textBox.TabIndex = 6;
@@ -387,6 +467,7 @@
             // 
             this.customer_name_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_name_textBox.Location = new System.Drawing.Point(146, 64);
+            this.customer_name_textBox.MaxLength = 30;
             this.customer_name_textBox.Name = "customer_name_textBox";
             this.customer_name_textBox.Size = new System.Drawing.Size(165, 30);
             this.customer_name_textBox.TabIndex = 4;
@@ -506,7 +587,7 @@
             this.cashSearchButton.TabIndex = 50;
             this.cashSearchButton.Text = "Buscar";
             this.cashSearchButton.UseVisualStyleBackColor = true;
-            this.cashSearchButton.Click += new System.EventHandler(this.cashSearchButton_Click);
+            this.cashSearchButton.Click += new System.EventHandler(this.CashSearchButton_Click);
             // 
             // eraseCashButton
             // 
@@ -527,7 +608,7 @@
             this.listViewCashBox.Size = new System.Drawing.Size(865, 293);
             this.listViewCashBox.TabIndex = 48;
             this.listViewCashBox.UseCompatibleStateImageBehavior = false;
-            this.listViewCashBox.SelectedIndexChanged += new System.EventHandler(this.listViewCashBox_SelectedIndexChanged);
+            this.listViewCashBox.SelectedIndexChanged += new System.EventHandler(this.ListViewCashBox_SelectedIndexChanged);
             // 
             // tarjCh_textBox
             // 
@@ -824,74 +905,6 @@
             this.labelCashBoxEmployeeName.Text = "Buenos Días, *****";
             this.labelCashBoxEmployeeName.Click += new System.EventHandler(this.label1_Click);
             // 
-            // customer_listView
-            // 
-            this.customer_listView.Location = new System.Drawing.Point(329, 109);
-            this.customer_listView.Name = "customer_listView";
-            this.customer_listView.Size = new System.Drawing.Size(574, 432);
-            this.customer_listView.TabIndex = 55;
-            this.customer_listView.UseCompatibleStateImageBehavior = false;
-            // 
-            // customer_modify_button
-            // 
-            this.customer_modify_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_modify_button.Location = new System.Drawing.Point(329, 558);
-            this.customer_modify_button.Name = "customer_modify_button";
-            this.customer_modify_button.Size = new System.Drawing.Size(261, 46);
-            this.customer_modify_button.TabIndex = 56;
-            this.customer_modify_button.Text = "Modificar";
-            this.customer_modify_button.UseVisualStyleBackColor = true;
-            // 
-            // customer_initService_button
-            // 
-            this.customer_initService_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_initService_button.Location = new System.Drawing.Point(642, 558);
-            this.customer_initService_button.Name = "customer_initService_button";
-            this.customer_initService_button.Size = new System.Drawing.Size(261, 46);
-            this.customer_initService_button.TabIndex = 57;
-            this.customer_initService_button.Text = "Dar Servicio";
-            this.customer_initService_button.UseVisualStyleBackColor = true;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(528, 24);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(204, 25);
-            this.label29.TabIndex = 58;
-            this.label29.Text = "Busqueda de Clientes";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(24, 403);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(299, 29);
-            this.checkBox1.TabIndex = 59;
-            this.checkBox1.Text = "Puede recibir Whatsapp/email";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(11, 249);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(129, 25);
-            this.label30.TabIndex = 60;
-            this.label30.Text = "Cumpleaños:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(147, 249);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 30);
-            this.dateTimePicker1.TabIndex = 61;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 4, 26, 0, 0, 0, 0);
-            // 
             // PrincipalMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -953,9 +966,9 @@
         private System.Windows.Forms.Button eraseCashButton;
         private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker2;
         private System.Windows.Forms.DateTimePicker cashBoxdateTimePicker1;
-        private System.Windows.Forms.TextBox search_for_textBox;
+        private System.Windows.Forms.TextBox customer_search_for_textBox;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox search_type_comboBox;
+        private System.Windows.Forms.ComboBox customer_search_type_comboBox;
         private System.Windows.Forms.Button customer_add_button;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RichTextBox customer_notes_textBox;
@@ -981,9 +994,9 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button customer_initService_button;
         private System.Windows.Forms.Button customer_modify_button;
-        private System.Windows.Forms.ListView customer_listView;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ListView listViewCustomer;
+        private System.Windows.Forms.CheckBox customer_allowedWS_checkBox;
+        private System.Windows.Forms.DateTimePicker customer_dateTimePicker;
         private System.Windows.Forms.Label label30;
     }
 }
