@@ -40,6 +40,105 @@ namespace LavanderiaMyM
                 return null;
             }
         }
+        public bool ModifyCustomer(int employeeId, Customer customer)
+        {
+            try
+            {
+                SqlDataReader rdr = (SqlDataReader)RunStoredProc("modifyCustomer", true,
+                    new SqlParameter("@id", customer.Id),
+                    new SqlParameter("@name", customer.Name),
+                    new SqlParameter("@nationalID", customer.NationalID),
+                    new SqlParameter("@birthday", customer.Birthday),
+                    new SqlParameter("@cellphone", customer.Celphone1),
+                    new SqlParameter("@telephone", customer.Telephone),
+                    new SqlParameter("@email", customer.Email),
+                    new SqlParameter("@address", customer.Address),
+                    new SqlParameter("@sendWhatsapp", customer.SendWhatsapp),
+                    new SqlParameter("@sendEmail", customer.SendWhatsapp),
+                    new SqlParameter("@employeeID", employeeId),
+                    new SqlParameter("@notes", customer.Notes),
+                    new SqlParameter("@discount", customer.Discount)
+                );
+                if (rdr != null) rdr.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+
+            return true;
+        }
+
+
+        public List<Customer> SearchCustomerByName(string search) => SearchCustomer("searchCustomerByName", search);
+        public List<Customer> SearchCustomerByNationalID(string search) => SearchCustomer("searchCustomerByNationalID", search);
+        public List<Customer> SearchCustomerByPhone(string search) => SearchCustomer("searchCustomerByPhone", search);
+        public List<Customer> SearchCustomerByEmail(string search) => SearchCustomer("searchCustomerByEmail", search);
+
+        private List<Customer> SearchCustomer(string storeProcedureName, string search)
+        {
+            List<Customer> ans = new List<Customer>();
+            try
+            {
+                SqlDataReader rdr = (SqlDataReader)RunStoredProc(storeProcedureName, true,
+                    new SqlParameter("@param", search)
+                );
+                while (rdr.Read())
+                {
+                    Customer temp = new Customer(
+                        rdr.GetString(rdr.GetOrdinal("name")).ToString(),
+                        rdr.GetString(rdr.GetOrdinal("nationalID")).ToString(),
+                        DateTime.Parse(rdr.GetSqlDateTime(rdr.GetOrdinal("birthday")).ToString()),
+                        rdr.GetString(rdr.GetOrdinal("cellphone")).ToString(),
+                        rdr.GetString(rdr.GetOrdinal("telephone")).ToString(),
+                        Boolean.Parse(rdr.GetBoolean(rdr.GetOrdinal("sendWhatsapp")).ToString()),
+                        rdr.GetString(rdr.GetOrdinal("email")).ToString(),
+                        Int32.Parse(rdr.GetInt32(rdr.GetOrdinal("discount")).ToString()),
+                        rdr.GetString(rdr.GetOrdinal("notes")).ToString()
+                        )
+                    {
+                        Id = Int32.Parse(rdr.GetInt32(rdr.GetOrdinal("customerID")).ToString())
+                    };
+                    ans.Add(temp);
+                }
+                if (rdr != null) rdr.Close();
+                return ans;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return ans;
+            }
+        }
+        public bool InsertCustomer(int employeeId, Customer customer)
+        {
+            try
+            {
+                SqlDataReader rdr = (SqlDataReader)RunStoredProc("insertCustomer", true,
+                    new SqlParameter("@name", customer.Name),
+                    new SqlParameter("@nationalID", customer.NationalID),
+                    new SqlParameter("@birthday", customer.Birthday),
+                    new SqlParameter("@cellphone", customer.Celphone1),
+                    new SqlParameter("@telephone", customer.Telephone),
+                    new SqlParameter("@email", customer.Email),
+                    new SqlParameter("@address", customer.Address),
+                    new SqlParameter("@sendWhatsapp", customer.SendWhatsapp),
+                    new SqlParameter("@sendEmail", customer.SendWhatsapp),
+                    new SqlParameter("@employeeID", employeeId),
+                    new SqlParameter("@notes", customer.Notes),
+                    new SqlParameter("@discount", customer.Discount)
+                );
+                if (rdr != null) rdr.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+
+            return true;
+        }
         public CashBox insertCashBox(CashBox cashBox)
         {
             SqlParameter output1 = new SqlParameter("@result", SqlDbType.Money);

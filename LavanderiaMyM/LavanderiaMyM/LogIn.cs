@@ -26,7 +26,7 @@ namespace LavanderiaMyM
         {
             string username = LogIn_username.Text.ToString();
             string password = LogIn_password.Text.ToString();
-            if(check.checkString(username,30)&& check.checkString(password, 25))
+            if(check.CheckString(username,30)&& check.CheckString(password, 25))
             {
                 Employee employee = database.authUser(username, password);
                 if (employee.Name != null)

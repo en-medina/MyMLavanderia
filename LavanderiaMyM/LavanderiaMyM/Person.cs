@@ -17,9 +17,8 @@ namespace LavanderiaMyM
         string address;
         string Celphone;
         
-        protected Person(int pid, string pname)
+        protected Person(string pname)
         {
-            Id = pid;
             Name = pname;
         }
 
@@ -45,8 +44,9 @@ namespace LavanderiaMyM
         bool couldModifyExpenses;
 
         bool isActive;
-        public Employee(int pid, string pname, string pusername, double pmaxDiscount) : base (pid, pname)
+        public Employee(int pid, string pname, string pusername, double pmaxDiscount) : base (pname)
         {
+            Id = pid;
             username = pusername;
             maxDiscount = pmaxDiscount;
         }
@@ -66,5 +66,34 @@ namespace LavanderiaMyM
             CouldModifyPayments = couldModifyPayments;
             CouldModifyExpenses = couldModifyExpenses;
         }
+    }
+
+    class Customer : Person
+    {
+        bool sendWhatsapp;
+        string notes;
+        int discount;
+        int createdById;
+        int modifiedById;
+        public Customer(string pname, string nationalId, DateTime birthday, string cellphone, 
+            string telephone, bool sendWhatsapp, string email, int discount, string notes) : 
+            base(pname)
+        {
+            NationalID = nationalId;
+            Birthday = birthday;
+            Celphone1 = cellphone;
+            Telephone = telephone;
+            SendWhatsapp = sendWhatsapp;
+            Email = email;
+            Discount = discount;
+            Notes = notes;
+            Address = "";
+        }
+
+        public bool SendWhatsapp { get => sendWhatsapp; set => sendWhatsapp = value; }
+        public string Notes { get => notes; set => notes = value; }
+        public int Discount { get => discount; set => discount = value; }
+        public int CreatedById { get => createdById; set => createdById = value; }
+        public int ModifiedById { get => modifiedById; set => modifiedById = value; }
     }
 }

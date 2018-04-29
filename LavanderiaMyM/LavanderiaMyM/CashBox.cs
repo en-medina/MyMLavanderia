@@ -73,9 +73,9 @@ namespace LavanderiaMyM
                 return false;
             try
             {
-                CashInDebitCard = dataChecker.convertStringtoInt(cashInDebitCard);
-                CashInCreditCard = dataChecker.convertStringtoInt(cashInCreditCard);
-                CashInCheck = dataChecker.convertStringtoInt(cashInCheck);
+                CashInDebitCard = dataChecker.ConvertStringtoInt(cashInDebitCard);
+                CashInCreditCard = dataChecker.ConvertStringtoInt(cashInCreditCard);
+                CashInCheck = dataChecker.ConvertStringtoInt(cashInCheck);
                 for (int i = 0; i < Money.Length; i++)
                     Money[i] = Int32.Parse(coins[i]);
                 calculateMoneyInBox();
