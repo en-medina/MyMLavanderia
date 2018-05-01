@@ -70,7 +70,6 @@ namespace LavanderiaMyM
             return true;
         }
 
-
         public List<Customer> SearchCustomerByName(string search) => SearchCustomer("searchCustomerByName", search);
         public List<Customer> SearchCustomerByNationalID(string search) => SearchCustomer("searchCustomerByNationalID", search);
         public List<Customer> SearchCustomerByPhone(string search) => SearchCustomer("searchCustomerByPhone", search);
@@ -295,6 +294,53 @@ namespace LavanderiaMyM
                 return null;
             }
         }
+        public int InsertOrder(Order order)
+        {
+            SqlParameter output = new SqlParameter("@orderID", SqlDbType.Int)
+            {
+                Direction = ParameterDirection.Output
+            };
+            try
+            {
+                SqlCommand cmd = (SqlCommand)RunStoredProc("insertOrder", false,
+                    new SqlParameter("@totalPrice", order.TotalPrice),
+                    new SqlParameter("@discount", order.Discount),
+                    new SqlParameter("@observations", order.Observations),
+                    new SqlParameter("@ticketID", order.TicketID),
+                    new SqlParameter("@quantity", order.Quantity),
+                    new SqlParameter("@clothQuantity", order.ClothQuantity),
+                    new SqlParameter("@expectedFinishDate", order.ExpectedFinish),
+                    new SqlParameter("@fk_employeeID", order.EmployeeID),
+                    new SqlParameter("@fk_customerID", order.CustomerID),
+                    output
+                );
+                return Int32.Parse(cmd.Parameters["@orderID"].Value.ToString());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return -1;
+            }
+        }
+        public bool InsertOrderDetail(OrderDetail orderDetail)
+        {
+            try
+            {
+                SqlCommand cmd = (SqlCommand)RunStoredProc("insertOrderDetail", false,
+                    new SqlParameter("@quantity", orderDetail.Quantity),
+                    new SqlParameter("@price", orderDetail.Price),
+                    new SqlParameter("@fk_order", orderDetail.OrderID),
+                    new SqlParameter("@fk_clothID", orderDetail.ClothID)
+                );
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
+
         private object RunStoredProc(string storedProcedureName, bool is_table, params SqlParameter[] data)
         {
             SqlConnection conn = null;

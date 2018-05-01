@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.principalTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.customer_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
@@ -62,6 +62,51 @@
             this.customer_name_textBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.service_make_order_button = new System.Windows.Forms.Button();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.service_discount_textBox = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.service_ticket_textBox = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.listViewCurOrder = new System.Windows.Forms.ListView();
+            this.service_add_button = new System.Windows.Forms.Button();
+            this.service_amount_textBox = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.listViewColor = new System.Windows.Forms.ListView();
+            this.label52 = new System.Windows.Forms.Label();
+            this.listViewCloth = new System.Windows.Forms.ListView();
+            this.label51 = new System.Windows.Forms.Label();
+            this.listViewService = new System.Windows.Forms.ListView();
+            this.label50 = new System.Windows.Forms.Label();
+            this.service_aditional_textBox = new System.Windows.Forms.RichTextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.service_waiting_order_label = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.service_total_order_label = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.service_discount_label = new System.Windows.Forms.Label();
+            this.service_email_label = new System.Windows.Forms.Label();
+            this.service_tel_label = new System.Windows.Forms.Label();
+            this.service_cel_label = new System.Windows.Forms.Label();
+            this.service_id_label = new System.Windows.Forms.Label();
+            this.service_name_label = new System.Windows.Forms.Label();
+            this.service_notes_label = new System.Windows.Forms.RichTextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.service_search_button = new System.Windows.Forms.Button();
+            this.service_accept_button = new System.Windows.Forms.Button();
+            this.service_client_id_textBox = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cashBoxdateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.cashBoxdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -102,20 +147,23 @@
             this.EnterCashButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelCashBoxEmployeeName = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.principalTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // principalTabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 1);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(927, 665);
-            this.tabControl1.TabIndex = 1;
+            this.principalTabControl.Controls.Add(this.tabPage1);
+            this.principalTabControl.Controls.Add(this.tabPage3);
+            this.principalTabControl.Controls.Add(this.tabPage2);
+            this.principalTabControl.Location = new System.Drawing.Point(12, 1);
+            this.principalTabControl.Name = "principalTabControl";
+            this.principalTabControl.SelectedIndex = 0;
+            this.principalTabControl.Size = new System.Drawing.Size(927, 665);
+            this.principalTabControl.TabIndex = 1;
+            this.principalTabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -209,6 +257,7 @@
             this.customer_initService_button.TabIndex = 57;
             this.customer_initService_button.Text = "Dar Servicio";
             this.customer_initService_button.UseVisualStyleBackColor = true;
+            this.customer_initService_button.Click += new System.EventHandler(this.Customer_initService_button_Click);
             // 
             // customer_modify_button
             // 
@@ -219,10 +268,11 @@
             this.customer_modify_button.TabIndex = 56;
             this.customer_modify_button.Text = "Modificar";
             this.customer_modify_button.UseVisualStyleBackColor = true;
-            this.customer_modify_button.Click += new System.EventHandler(this.customer_modify_button_Click);
+            this.customer_modify_button.Click += new System.EventHandler(this.Customer_modify_button_Click);
             // 
             // listViewCustomer
             // 
+            this.listViewCustomer.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.listViewCustomer.HideSelection = false;
             this.listViewCustomer.Location = new System.Drawing.Point(329, 109);
             this.listViewCustomer.MultiSelect = false;
@@ -298,6 +348,7 @@
             this.customer_notes_textBox.Size = new System.Drawing.Size(287, 68);
             this.customer_notes_textBox.TabIndex = 25;
             this.customer_notes_textBox.Text = "";
+            this.customer_notes_textBox.TextChanged += new System.EventHandler(this.customer_notes_textBox_TextChanged);
             // 
             // label28
             // 
@@ -308,6 +359,7 @@
             this.label28.Size = new System.Drawing.Size(63, 25);
             this.label28.TabIndex = 24;
             this.label28.Text = "Notas";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label27
             // 
@@ -491,6 +543,497 @@
             this.label19.Size = new System.Drawing.Size(194, 25);
             this.label19.TabIndex = 1;
             this.label19.Text = "Creación de Clientes";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.service_make_order_button);
+            this.tabPage3.Controls.Add(this.label60);
+            this.tabPage3.Controls.Add(this.label59);
+            this.tabPage3.Controls.Add(this.label58);
+            this.tabPage3.Controls.Add(this.label57);
+            this.tabPage3.Controls.Add(this.label56);
+            this.tabPage3.Controls.Add(this.service_discount_textBox);
+            this.tabPage3.Controls.Add(this.label54);
+            this.tabPage3.Controls.Add(this.service_ticket_textBox);
+            this.tabPage3.Controls.Add(this.label55);
+            this.tabPage3.Controls.Add(this.listViewCurOrder);
+            this.tabPage3.Controls.Add(this.service_add_button);
+            this.tabPage3.Controls.Add(this.service_amount_textBox);
+            this.tabPage3.Controls.Add(this.label53);
+            this.tabPage3.Controls.Add(this.listViewColor);
+            this.tabPage3.Controls.Add(this.label52);
+            this.tabPage3.Controls.Add(this.listViewCloth);
+            this.tabPage3.Controls.Add(this.label51);
+            this.tabPage3.Controls.Add(this.listViewService);
+            this.tabPage3.Controls.Add(this.label50);
+            this.tabPage3.Controls.Add(this.service_aditional_textBox);
+            this.tabPage3.Controls.Add(this.label49);
+            this.tabPage3.Controls.Add(this.service_waiting_order_label);
+            this.tabPage3.Controls.Add(this.label47);
+            this.tabPage3.Controls.Add(this.service_total_order_label);
+            this.tabPage3.Controls.Add(this.label45);
+            this.tabPage3.Controls.Add(this.service_discount_label);
+            this.tabPage3.Controls.Add(this.service_email_label);
+            this.tabPage3.Controls.Add(this.service_tel_label);
+            this.tabPage3.Controls.Add(this.service_cel_label);
+            this.tabPage3.Controls.Add(this.service_id_label);
+            this.tabPage3.Controls.Add(this.service_name_label);
+            this.tabPage3.Controls.Add(this.service_notes_label);
+            this.tabPage3.Controls.Add(this.label33);
+            this.tabPage3.Controls.Add(this.label32);
+            this.tabPage3.Controls.Add(this.label34);
+            this.tabPage3.Controls.Add(this.label35);
+            this.tabPage3.Controls.Add(this.label36);
+            this.tabPage3.Controls.Add(this.label37);
+            this.tabPage3.Controls.Add(this.label38);
+            this.tabPage3.Controls.Add(this.service_search_button);
+            this.tabPage3.Controls.Add(this.service_accept_button);
+            this.tabPage3.Controls.Add(this.service_client_id_textBox);
+            this.tabPage3.Controls.Add(this.label31);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(919, 632);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Servicio";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // service_make_order_button
+            // 
+            this.service_make_order_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_make_order_button.Location = new System.Drawing.Point(686, 556);
+            this.service_make_order_button.Name = "service_make_order_button";
+            this.service_make_order_button.Size = new System.Drawing.Size(212, 54);
+            this.service_make_order_button.TabIndex = 101;
+            this.service_make_order_button.Text = "Realizar Orden";
+            this.service_make_order_button.UseVisualStyleBackColor = true;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(570, 585);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(110, 25);
+            this.label60.TabIndex = 100;
+            this.label60.Text = "00,000,000";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(570, 556);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(110, 25);
+            this.label59.TabIndex = 99;
+            this.label59.Text = "00,000,000";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(431, 585);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(133, 25);
+            this.label58.TabIndex = 98;
+            this.label58.Text = "Total a pagar:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(376, 556);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(188, 25);
+            this.label57.TabIndex = 97;
+            this.label57.Text = "Total sin descuento:";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(870, 514);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(30, 25);
+            this.label56.TabIndex = 96;
+            this.label56.Text = "%";
+            // 
+            // service_discount_textBox
+            // 
+            this.service_discount_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_discount_textBox.Location = new System.Drawing.Point(814, 514);
+            this.service_discount_textBox.MaxLength = 30;
+            this.service_discount_textBox.Name = "service_discount_textBox";
+            this.service_discount_textBox.Size = new System.Drawing.Size(50, 30);
+            this.service_discount_textBox.TabIndex = 95;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(696, 514);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(112, 25);
+            this.label54.TabIndex = 94;
+            this.label54.Text = "Descuento:";
+            // 
+            // service_ticket_textBox
+            // 
+            this.service_ticket_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_ticket_textBox.Location = new System.Drawing.Point(487, 514);
+            this.service_ticket_textBox.MaxLength = 30;
+            this.service_ticket_textBox.Name = "service_ticket_textBox";
+            this.service_ticket_textBox.Size = new System.Drawing.Size(91, 30);
+            this.service_ticket_textBox.TabIndex = 93;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(376, 514);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(105, 25);
+            this.label55.TabIndex = 92;
+            this.label55.Text = "Ticket: 00-";
+            // 
+            // listViewCurOrder
+            // 
+            this.listViewCurOrder.HideSelection = false;
+            this.listViewCurOrder.Location = new System.Drawing.Point(381, 320);
+            this.listViewCurOrder.MultiSelect = false;
+            this.listViewCurOrder.Name = "listViewCurOrder";
+            this.listViewCurOrder.Size = new System.Drawing.Size(517, 177);
+            this.listViewCurOrder.TabIndex = 91;
+            this.listViewCurOrder.UseCompatibleStateImageBehavior = false;
+            // 
+            // service_add_button
+            // 
+            this.service_add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_add_button.Location = new System.Drawing.Point(723, 268);
+            this.service_add_button.Name = "service_add_button";
+            this.service_add_button.Size = new System.Drawing.Size(138, 46);
+            this.service_add_button.TabIndex = 90;
+            this.service_add_button.Text = "Agregar";
+            this.service_add_button.UseVisualStyleBackColor = true;
+            // 
+            // service_amount_textBox
+            // 
+            this.service_amount_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_amount_textBox.Location = new System.Drawing.Point(535, 274);
+            this.service_amount_textBox.MaxLength = 30;
+            this.service_amount_textBox.Name = "service_amount_textBox";
+            this.service_amount_textBox.Size = new System.Drawing.Size(182, 30);
+            this.service_amount_textBox.TabIndex = 89;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(432, 274);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(97, 25);
+            this.label53.TabIndex = 88;
+            this.label53.Text = "Cantidad:";
+            // 
+            // listViewColor
+            // 
+            this.listViewColor.HideSelection = false;
+            this.listViewColor.Location = new System.Drawing.Point(740, 48);
+            this.listViewColor.MultiSelect = false;
+            this.listViewColor.Name = "listViewColor";
+            this.listViewColor.Size = new System.Drawing.Size(158, 209);
+            this.listViewColor.TabIndex = 87;
+            this.listViewColor.UseCompatibleStateImageBehavior = false;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(783, 15);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(59, 25);
+            this.label52.TabIndex = 86;
+            this.label52.Text = "Color";
+            // 
+            // listViewCloth
+            // 
+            this.listViewCloth.HideSelection = false;
+            this.listViewCloth.Location = new System.Drawing.Point(562, 48);
+            this.listViewCloth.MultiSelect = false;
+            this.listViewCloth.Name = "listViewCloth";
+            this.listViewCloth.Size = new System.Drawing.Size(158, 209);
+            this.listViewCloth.TabIndex = 85;
+            this.listViewCloth.UseCompatibleStateImageBehavior = false;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(605, 15);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(75, 25);
+            this.label51.TabIndex = 84;
+            this.label51.Text = "Prenda";
+            // 
+            // listViewService
+            // 
+            this.listViewService.HideSelection = false;
+            this.listViewService.Location = new System.Drawing.Point(381, 48);
+            this.listViewService.MultiSelect = false;
+            this.listViewService.Name = "listViewService";
+            this.listViewService.Size = new System.Drawing.Size(158, 209);
+            this.listViewService.TabIndex = 83;
+            this.listViewService.UseCompatibleStateImageBehavior = false;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(424, 15);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(82, 25);
+            this.label50.TabIndex = 82;
+            this.label50.Text = "Servicio";
+            // 
+            // service_aditional_textBox
+            // 
+            this.service_aditional_textBox.Location = new System.Drawing.Point(13, 542);
+            this.service_aditional_textBox.MaxLength = 50;
+            this.service_aditional_textBox.Name = "service_aditional_textBox";
+            this.service_aditional_textBox.Size = new System.Drawing.Size(289, 68);
+            this.service_aditional_textBox.TabIndex = 81;
+            this.service_aditional_textBox.Text = "";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(26, 514);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(250, 25);
+            this.label49.TabIndex = 80;
+            this.label49.Text = "Observaciones Adicionales";
+            // 
+            // service_waiting_order_label
+            // 
+            this.service_waiting_order_label.AutoSize = true;
+            this.service_waiting_order_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_waiting_order_label.Location = new System.Drawing.Point(221, 478);
+            this.service_waiting_order_label.Name = "service_waiting_order_label";
+            this.service_waiting_order_label.Size = new System.Drawing.Size(63, 25);
+            this.service_waiting_order_label.TabIndex = 79;
+            this.service_waiting_order_label.Text = "Notas";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(26, 478);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(189, 25);
+            this.label47.TabIndex = 78;
+            this.label47.Text = "Ordenes en tránsito:";
+            // 
+            // service_total_order_label
+            // 
+            this.service_total_order_label.AutoSize = true;
+            this.service_total_order_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_total_order_label.Location = new System.Drawing.Point(221, 444);
+            this.service_total_order_label.Name = "service_total_order_label";
+            this.service_total_order_label.Size = new System.Drawing.Size(63, 25);
+            this.service_total_order_label.TabIndex = 77;
+            this.service_total_order_label.Text = "Notas";
+            this.service_total_order_label.Click += new System.EventHandler(this.label46_Click);
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(50, 444);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(165, 25);
+            this.label45.TabIndex = 76;
+            this.label45.Text = "Total de ordenes:";
+            // 
+            // service_discount_label
+            // 
+            this.service_discount_label.AutoSize = true;
+            this.service_discount_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_discount_label.Location = new System.Drawing.Point(136, 289);
+            this.service_discount_label.Name = "service_discount_label";
+            this.service_discount_label.Size = new System.Drawing.Size(112, 25);
+            this.service_discount_label.TabIndex = 75;
+            this.service_discount_label.Text = "Descuento:";
+            // 
+            // service_email_label
+            // 
+            this.service_email_label.AutoSize = true;
+            this.service_email_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_email_label.Location = new System.Drawing.Point(136, 254);
+            this.service_email_label.Name = "service_email_label";
+            this.service_email_label.Size = new System.Drawing.Size(66, 25);
+            this.service_email_label.TabIndex = 74;
+            this.service_email_label.Text = "Email:";
+            // 
+            // service_tel_label
+            // 
+            this.service_tel_label.AutoSize = true;
+            this.service_tel_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_tel_label.Location = new System.Drawing.Point(136, 218);
+            this.service_tel_label.Name = "service_tel_label";
+            this.service_tel_label.Size = new System.Drawing.Size(95, 25);
+            this.service_tel_label.TabIndex = 73;
+            this.service_tel_label.Text = "Teléfono:";
+            // 
+            // service_cel_label
+            // 
+            this.service_cel_label.AutoSize = true;
+            this.service_cel_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_cel_label.Location = new System.Drawing.Point(136, 182);
+            this.service_cel_label.Name = "service_cel_label";
+            this.service_cel_label.Size = new System.Drawing.Size(80, 25);
+            this.service_cel_label.TabIndex = 72;
+            this.service_cel_label.Text = "Celular:";
+            // 
+            // service_id_label
+            // 
+            this.service_id_label.AutoSize = true;
+            this.service_id_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_id_label.Location = new System.Drawing.Point(136, 146);
+            this.service_id_label.Name = "service_id_label";
+            this.service_id_label.Size = new System.Drawing.Size(108, 25);
+            this.service_id_label.TabIndex = 71;
+            this.service_id_label.Text = "RNC/Ced.:";
+            // 
+            // service_name_label
+            // 
+            this.service_name_label.AutoSize = true;
+            this.service_name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_name_label.Location = new System.Drawing.Point(136, 110);
+            this.service_name_label.Name = "service_name_label";
+            this.service_name_label.Size = new System.Drawing.Size(87, 25);
+            this.service_name_label.TabIndex = 70;
+            this.service_name_label.Text = "Nombre:";
+            // 
+            // service_notes_label
+            // 
+            this.service_notes_label.Location = new System.Drawing.Point(13, 363);
+            this.service_notes_label.MaxLength = 50;
+            this.service_notes_label.Name = "service_notes_label";
+            this.service_notes_label.ReadOnly = true;
+            this.service_notes_label.Size = new System.Drawing.Size(289, 68);
+            this.service_notes_label.TabIndex = 69;
+            this.service_notes_label.Text = "";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(120, 326);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(63, 25);
+            this.label33.TabIndex = 68;
+            this.label33.Text = "Notas";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(22, 289);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(112, 25);
+            this.label32.TabIndex = 67;
+            this.label32.Text = "Descuento:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(68, 254);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(66, 25);
+            this.label34.TabIndex = 65;
+            this.label34.Text = "Email:";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(39, 218);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(95, 25);
+            this.label35.TabIndex = 64;
+            this.label35.Text = "Teléfono:";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(54, 182);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(80, 25);
+            this.label36.TabIndex = 63;
+            this.label36.Text = "Celular:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(26, 146);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(108, 25);
+            this.label37.TabIndex = 62;
+            this.label37.Text = "RNC/Ced.:";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(47, 110);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(87, 25);
+            this.label38.TabIndex = 61;
+            this.label38.Text = "Nombre:";
+            // 
+            // service_search_button
+            // 
+            this.service_search_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_search_button.Location = new System.Drawing.Point(157, 48);
+            this.service_search_button.Name = "service_search_button";
+            this.service_search_button.Size = new System.Drawing.Size(138, 46);
+            this.service_search_button.TabIndex = 53;
+            this.service_search_button.Text = "Buscar";
+            this.service_search_button.UseVisualStyleBackColor = true;
+            // 
+            // service_accept_button
+            // 
+            this.service_accept_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_accept_button.Location = new System.Drawing.Point(13, 48);
+            this.service_accept_button.Name = "service_accept_button";
+            this.service_accept_button.Size = new System.Drawing.Size(138, 46);
+            this.service_accept_button.TabIndex = 52;
+            this.service_accept_button.Text = "Aceptar";
+            this.service_accept_button.UseVisualStyleBackColor = true;
+            this.service_accept_button.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // service_client_id_textBox
+            // 
+            this.service_client_id_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_client_id_textBox.Location = new System.Drawing.Point(113, 10);
+            this.service_client_id_textBox.MaxLength = 30;
+            this.service_client_id_textBox.Name = "service_client_id_textBox";
+            this.service_client_id_textBox.Size = new System.Drawing.Size(182, 30);
+            this.service_client_id_textBox.TabIndex = 6;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(8, 13);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(103, 25);
+            this.label31.TabIndex = 5;
+            this.label31.Text = "ID Cliente:";
             // 
             // tabPage2
             // 
@@ -910,12 +1453,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 673);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.principalTabControl);
             this.Name = "PrincipalMenu";
             this.Text = "Form2";
-            this.tabControl1.ResumeLayout(false);
+            this.principalTabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
@@ -924,7 +1469,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl principalTabControl;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ListView listViewCashBox;
@@ -998,5 +1543,50 @@
         private System.Windows.Forms.CheckBox customer_allowedWS_checkBox;
         private System.Windows.Forms.DateTimePicker customer_dateTimePicker;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TextBox service_client_id_textBox;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button service_accept_button;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button service_search_button;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label service_total_order_label;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label service_discount_label;
+        private System.Windows.Forms.Label service_email_label;
+        private System.Windows.Forms.Label service_tel_label;
+        private System.Windows.Forms.Label service_cel_label;
+        private System.Windows.Forms.Label service_id_label;
+        private System.Windows.Forms.Label service_name_label;
+        private System.Windows.Forms.RichTextBox service_notes_label;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Button service_make_order_button;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TextBox service_discount_textBox;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox service_ticket_textBox;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.ListView listViewCurOrder;
+        private System.Windows.Forms.Button service_add_button;
+        private System.Windows.Forms.TextBox service_amount_textBox;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.ListView listViewColor;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.ListView listViewCloth;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.ListView listViewService;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.RichTextBox service_aditional_textBox;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label service_waiting_order_label;
     }
 }

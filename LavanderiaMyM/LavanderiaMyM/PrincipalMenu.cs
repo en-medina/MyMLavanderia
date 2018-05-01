@@ -18,7 +18,7 @@ namespace LavanderiaMyM
         {
             InitializeComponent();
             isInsertion = true;
-
+            principalTabControl.SelectedIndex = 2;
             listViewCashBox.View = View.Details;
             listViewCashBox.GridLines = true;
             listViewCashBox.Columns.Add("Fecha", 120, HorizontalAlignment.Left);
@@ -226,13 +226,27 @@ namespace LavanderiaMyM
             }
 
         }
-
-        private void ListViewCustomer_DoubleClick(object sender, EventArgs e)
+        private void SendToService()
         {
-            MessageBox.Show("ICI");
+            if (listViewCustomer.SelectedItems.Count > 0)
+            {
+                int index = listViewCustomer.SelectedItems[0].Index;
+                service_name_label.Text = customerArray[index].Name;
+                service_id_label.Tag = customerArray[index].Id;
+                service_id_label.Text = customerArray[index].NationalID;
+                service_cel_label.Text = customerArray[index].Celphone1;
+                service_tel_label.Text = customerArray[index].Telephone;
+                service_email_label.Text = customerArray[index].Email;
+                service_notes_label.Text = customerArray[index].Notes;
+                service_discount_label.Text = customerArray[index].Discount.ToString() + " %";
+                principalTabControl.SelectedIndex = 1;
+            }
         }
 
-        private void customer_modify_button_Click(object sender, EventArgs e)
+        private void ListViewCustomer_DoubleClick(object sender, EventArgs e) => SendToService();
+        private void Customer_initService_button_Click(object sender, EventArgs e) => SendToService();
+
+        private void Customer_modify_button_Click(object sender, EventArgs e)
         {
             if(listViewCustomer.SelectedItems.Count > 0)
             {
@@ -249,6 +263,37 @@ namespace LavanderiaMyM
                 customer_notes_textBox.Text = customerArray[index].Notes;
             }
         }
+
+        private void ListViewCustomer_DoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customer_notes_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void Customer_add_button_Click(object sender, EventArgs e)
         {
